@@ -1,11 +1,30 @@
 import React from "react";
 
-import { Container, Title } from "./styles";
+import { 
+    Container,
+    Header,
+    UserInfo,
+    Photo,
+    User,
+    UserGreeting,
+    UserName,
+    UserWrapper
+} from "./styles";
 
 export function Dashboard(){
     return(
         <Container>
-            <Title>Tela Dashboard</Title>
+            <Header>
+                <UserWrapper>
+                    <UserInfo>
+                        <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/62765965?v=4' }}/ >
+                        <User>
+                            <UserGreeting>Olá,</UserGreeting>
+                            <UserName>Luiz</UserName>
+                        </User>
+                    </UserInfo>
+                </UserWrapper>    
+            </Header>
         </Container>
     )
 };
